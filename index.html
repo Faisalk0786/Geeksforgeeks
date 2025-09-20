@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const newarr = [1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5];
+
+      const mappedarray = newarr.map((item) => item * 5);
+      const filteredarray = mappedarray.filter((item) => item % 2 === 0);
+      const reducedarray = filteredarray.reduce((acc, item) => {
+        acc += item;
+        return acc;
+      }, 0);
+
+      console.log(reducedarray);
+    </script>
+  </body>
+</html>
